@@ -100,6 +100,7 @@ nav a:hover {
 .pflex iframe{
 	padding-left: 30px;
 	border-radius: 10px;
+	height: 20em;
 
 }
 
@@ -149,9 +150,10 @@ nav a:hover {
 	display: flex;
 	max-width: 112em;
 	height: 300px;
-	width: 100%;
+	width: 90%;
 	margin-left: 50px;
 	margin-right: 50px;
+	margin-top: 10em;
 	overflow-x:scroll;/*le indicamos al contenedor que lo que sobra no lo muestre si no que lo esconda y solo se pieda acceder a el usando el scroll */
 	scroll-snap-type: x 
 	mandatory;
@@ -257,6 +259,17 @@ footer{
 }
 
 
+@media screen and (max-width: 320px) {
+	
+	.slider{
+		max-width:90%
+	}
+
+	footer{
+	    width: 0%;
+	}
+
+}
 
 
 
@@ -318,16 +331,17 @@ footer{
 		overflow-y:scroll;
 		margin-top: 40em;
 		margin-right: 30px;
-		
-		width: 100%;
+		max-width:90%;
 		scroll-snap-type: y 
 		mandatory;
 		
 	}
 
 	footer{
-		width: 100%;
+		
 	}
+
+	
 }
 
 @media screen and (max-width: 1024px) {
@@ -382,8 +396,7 @@ footer{
 		overflow-y:scroll;
 		margin-top: 35em;
 		margin-right: 30px;
-		
-		width: 100%;
+	    max-width:90%;
 		scroll-snap-type: y 
 		mandatory;
 		
@@ -427,8 +440,7 @@ footer{
 		margin-right: 35px;
 		scroll-snap-type: y 
 		mandatory;
-		
-		width: 100%;
+		max-width:90%;
 		
 	}
 
